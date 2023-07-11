@@ -11,8 +11,8 @@ namespace BankomatConsole
             AsciiArt asciiArt = new AsciiArt();
             asciiArt.DisplayAscii();
 
-            //ConsoleMenu consoleMenu = new ConsoleMenu();
-            //consoleMenu.Run();
+            ConsoleMenu consoleMenu = new ConsoleMenu();
+            consoleMenu.Run();
         }
     }
 }
