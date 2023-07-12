@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace BankomatConsole
 {
-    internal class AsciiArt
+    public static class AsciiArt
     {
-        private readonly string asciiArt;
+        private static readonly string asciiArt;
 
-        public AsciiArt()
+        static AsciiArt()
         {
             asciiArt = @"
     __     __                  _______ __  __ 
@@ -23,7 +23,7 @@ namespace BankomatConsole
 ";
         }
 
-        public void DisplayAscii()
+        public static void DisplayAscii()
         {
             Console.WriteLine(asciiArt);
         }
