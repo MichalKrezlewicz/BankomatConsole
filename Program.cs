@@ -1,4 +1,4 @@
-﻿using BankomatConsole.BankomatConsole;
+﻿using BankomatConsole.Menu;
 
 namespace BankomatConsole
 {
@@ -7,12 +7,11 @@ namespace BankomatConsole
         static void Main(string[] args)
         {
             Console.SetWindowSize(80, 20);
+            Console.BackgroundColor = ConsoleColor.DarkBlue;
+            Console.ForegroundColor = ConsoleColor.White;
 
-
-            //ConsoleMenu consoleMenu = new ConsoleMenu();
-            //consoleMenu.Run();
-
-            SimpleMenu.StartSimpleMenu();
+            //SimpleMenu.StartMenu();
+            AdvancedMenu.StartMenu();
         }
     }
 }

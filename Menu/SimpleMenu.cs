@@ -4,24 +4,26 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BankomatConsole
+namespace BankomatConsole.Menu
 {
     static class SimpleMenu
     {
-        public static void StartSimpleMenu()
+        public static void StartMenu()
         {
-            Console.Title = "Simple Menu";
+            Console.Title = "YourATM by Michał Krężlewicz";
+            string menuOptions = @"
+        Simply press the selected key.
 
+        >>> 1 for cash withdrawal <<<
+        >>> 2 for cash deposit <<<
+        >>> 3 for balance check <<<
+        >>> 4 to exit <<<";
 
             while (true)
             {
                 Console.Clear();
                 AsciiArt.DisplayAscii();
-                Console.WriteLine("Simply press the selected key.\n");
-                Console.WriteLine(">>> 1 for cash withdrawal <<<");
-                Console.WriteLine(">>> 2 for cash deposit <<<");
-                Console.WriteLine(">>> 3 for balance check <<<");
-                Console.WriteLine(">>> 4 to exit <<<");
+                Console.WriteLine(menuOptions);
 
                 ConsoleKeyInfo klawisz = Console.ReadKey();
                 switch (klawisz.Key)

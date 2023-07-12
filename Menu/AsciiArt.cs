@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BankomatConsole
+namespace BankomatConsole.Menu
 {
     public static class AsciiArt
     {
