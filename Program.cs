@@ -12,6 +12,8 @@ namespace BankomatConsole
 
             //SimpleMenu.StartMenu();
             AdvancedMenu.StartMenu();
+
+            //kUcLis tu był!
         }
     }
 }
