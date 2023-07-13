@@ -2,6 +2,7 @@
 {
     public static class DepositCashView
     {
+        //method below is for under construction view
         public static void depositCashViewUC()
         {
             Console.SetCursorPosition(4, 1);
@@ -11,6 +12,7 @@
             Console.ReadKey();
         }
 
+        //method below will be final
         public static void depositCashView()
         {
             Console.SetCursorPosition(4, 1);

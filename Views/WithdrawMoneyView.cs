@@ -2,6 +2,7 @@
 {
     public static class WithdrawMoneyView
     {
+        //method below is for under construction view
         public static void withdrawMoneyViewUC()
         {
             Console.SetCursorPosition(4, 1);
@@ -11,6 +12,7 @@
             Console.ReadKey();
         }
 
+        //method below will be final
         public static void withdrawMoneyView()
         {
             Console.SetCursorPosition(4, 1);
