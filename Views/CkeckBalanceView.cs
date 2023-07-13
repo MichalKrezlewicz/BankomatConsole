@@ -1,9 +1,9 @@
 ﻿namespace BankomatConsole.Views
 {
-    public static class CkeckBalanceView
+    public static class CheckBalanceView
     {
         //method below is for under construction view
-        public static void ckeckBalanceViewUC()
+        public static void checkBalanceViewUC()
         {
             Console.SetCursorPosition(4, 1);
             Console.WriteLine("Check Balance option is still under construction");
@@ -13,7 +13,7 @@
         }
 
         //method below will be final
-        public static void ckeckBalanceView()
+        public static void checkBalanceView()
         {
             Console.SetCursorPosition(4, 1);
             Console.WriteLine($"Your account balance {Account.ShowBalance()}");

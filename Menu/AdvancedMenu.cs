@@ -95,7 +95,7 @@ namespace BankomatConsole.Menu
             {
                 case 0: Console.Clear(); WithdrawMoneyView.withdrawMoneyViewUC(); break;
                 case 1: Console.Clear(); DepositCashView.depositCashViewUC(); break;
-                case 2: Console.Clear(); CkeckBalanceView.ckeckBalanceView(); break;
+                case 2: Console.Clear(); CheckBalanceView.checkBalanceView(); break;
                 case 3: Environment.Exit(0); break;
             }
         }
