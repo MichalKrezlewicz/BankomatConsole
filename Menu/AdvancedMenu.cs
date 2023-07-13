@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using BankomatConsole.Views;
 using System.Threading.Tasks;
 
 namespace BankomatConsole.Menu
@@ -92,38 +93,11 @@ namespace BankomatConsole.Menu
         {
             switch (activeOption)
             {
-                case 0: Console.Clear(); underConstructionWC(); break;
-                case 1: Console.Clear(); underConstructionDC(); break;
-                case 2: Console.Clear(); underConstructionCB(); break;
+                case 0: Console.Clear(); WithdrawMoneyView.withdrawMoneyViewUC(); break;
+                case 1: Console.Clear(); DepositCashView.depositCashViewUC(); break;
+                case 2: Console.Clear(); CkeckBalanceView.ckeckBalanceView(); break;
                 case 3: Environment.Exit(0); break;
             }
-        }
-
-        static void underConstructionWC()
-        {
-            Console.SetCursorPosition(4, 1);
-            Console.WriteLine("Withdraw cash option is still under construction");
-            Console.SetCursorPosition(13, 3);
-            Console.WriteLine(">>> PRESS ANY KEY TO EXIT <<<");
-            Console.ReadKey();
-        }
-
-        static void underConstructionDC()
-        {
-            Console.SetCursorPosition(4, 1);
-            Console.WriteLine("Deposit cash option is still under construction");
-            Console.SetCursorPosition(13, 3);
-            Console.WriteLine(">>> PRESS ANY KEY TO EXIT <<<");
-            Console.ReadKey();
-        }
-
-        static void underConstructionCB()
-        {
-            Console.SetCursorPosition(4, 1);
-            Console.WriteLine("Check Balance option is still under construction");
-            Console.SetCursorPosition(13, 3);
-            Console.WriteLine(">>> PRESS ANY KEY TO EXIT <<<");
-            Console.ReadKey();
         }
     }
 }
