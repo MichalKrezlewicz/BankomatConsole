@@ -6,21 +6,29 @@ using System.Threading.Tasks;
 
 namespace BankomatConsole
 {
-    public static class Account
+    public class Account
     {
-        public static  int AccountId { get; set; }
-        public static int AccountBalance { get; set; }
-        public static int ShowBalance()
+        public int AccountId { get; set; }
+        private double accountBalance;
+
+        public double AccountBalance
         {
-            return AccountBalance;
+            get { return accountBalance; }
+            set { accountBalance = value; }
         }
-        public static void IncreaseBalance(int amount)
+
+        public Account(int accountId, double accountBalance)
         {
-            AccountBalance += amount;
+            AccountId = accountId;
+            AccountBalance = 0.0;
         }
-        public static void DecreaseBalance(int amount)
-        {
-            AccountBalance -= amount;
-        }
+
+        //class BankAccount
+        //{
+        //    private double balance = 0;
+        //    public void Deposit(double n) => balance = n;
+        //    public void Withdraw(double n) => balance -= n;
+        //    public double GetBalance() => balance;
+        //}
     }
 }

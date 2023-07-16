@@ -9,7 +9,7 @@ namespace BankomatConsole
             Console.SetWindowSize(80, 20);
             Console.BackgroundColor = ConsoleColor.DarkBlue;
             Console.ForegroundColor = ConsoleColor.White;
-
+            Account programAccount = new Account(1, 1000.0);
             //SimpleMenu.StartMenu();
             AdvancedMenu.StartMenu();
         }

@@ -13,10 +13,10 @@
         }
 
         //method below will be final
-        public static void checkBalanceView()
+        public static void checkBalanceView(Account programAccount)
         {
             Console.SetCursorPosition(4, 1);
-            Console.WriteLine($"Your account balance {Account.ShowBalance()}");
+            Console.WriteLine($"Your account balance {Operations.ShowBalance(programAccount)}");
             Console.SetCursorPosition(13, 3);
             Console.WriteLine(">>> PRESS ANY KEY TO EXIT <<<");
             Console.ReadKey();
