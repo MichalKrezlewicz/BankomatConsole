@@ -11,11 +11,15 @@ namespace BankomatConsole.Menu
     {
         static string[] menuOptions = { "Withdraw cash (1)", "Deposit cash (2)", "Check balance (3)", "Exit (4)" };
         static int activeOption = 0;
+        private static Account _programAccount;
 
-        public static void StartMenu()
+        public static void StartMenu(Account programAccount)
         {
             Console.Title = "YourATM by Michał Krężlewicz";
             Console.CursorVisible = false;
+
+            _programAccount = programAccount;
+
             while (true)
             {
                 ShowMenu();
@@ -89,13 +93,14 @@ namespace BankomatConsole.Menu
         }
 
 
+
         static void RunOption()
         {
             switch (activeOption)
             {
-                case 0: Console.Clear(); WithdrawMoneyView.withdrawMoneyViewUC(); break;
-                case 1: Console.Clear(); DepositCashView.depositCashViewUC(); break;
-                case 2: Console.Clear(); CheckBalanceView.checkBalanceView(); break;
+                case 0: Console.Clear(); WithdrawMoneyView.withdrawMoneyView(_programAccount); break;
+                case 1: Console.Clear(); DepositCashView.depositCashView(_programAccount); break;
+                case 2: Console.Clear(); CheckBalanceView.checkBalanceView(_programAccount); break;
                 case 3: Environment.Exit(0); break;
             }
         }

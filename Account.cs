@@ -9,19 +9,16 @@ namespace BankomatConsole
     public class Account
     {
         public int AccountId { get; set; }
-        private double accountBalance;
+        public double AccountBalance { get; set; }
 
-        public double AccountBalance
-        {
-            get { return accountBalance; }
-            set { accountBalance = value; }
-        }
-
-        public Account(int accountId, double accountBalance)
+        public Account(int accountId)
         {
             AccountId = accountId;
             AccountBalance = 0.0;
         }
+
+        
+
 
         //class BankAccount
         //{

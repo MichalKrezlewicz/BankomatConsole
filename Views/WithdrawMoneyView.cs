@@ -13,10 +13,12 @@
         }
 
         //method below will be final
-        public static void withdrawMoneyView()
+        public static void withdrawMoneyView(Account programAccount)
         {
             Console.SetCursorPosition(4, 1);
-            Console.WriteLine("Withdraw cash option is still under construction");
+            Console.WriteLine("Please write the amount of money to withdraw: ");
+            double amount = Double.Parse(Console.ReadLine());
+            Operations.DecreaseBalance(programAccount, amount);
             Console.SetCursorPosition(13, 3);
             Console.WriteLine(">>> PRESS ANY KEY TO EXIT <<<");
             Console.ReadKey();
