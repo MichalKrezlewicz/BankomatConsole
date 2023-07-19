@@ -20,5 +20,16 @@ namespace BankomatConsole
         {
             account.AccountBalance -= amount;
         }
+        public static bool IsWithdrawPossible(Account account, double amount) 
+        { 
+            if(account.AccountBalance < amount)
+            {
+                return false;
+            }
+            else
+            {
+                return true;
+            }
+        }
     }
 }

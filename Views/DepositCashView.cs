@@ -25,3 +25,5 @@
         }
     }
 }
+
+//dorobic try parse i string NotNullOrWhiteSpace na double wpisywany przez uzytkownika 
